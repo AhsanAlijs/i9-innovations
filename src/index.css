@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"); */
+
+  :root {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    /* font-family: "Outfit", sans-serif; */
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  p {
+    /* color: #67748e; */
+    /* font-weight: 500; */
+  }
+
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid #0065C0;
+  }
+
+  .header-background {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 101, 192, 0.8) 0%,
+        rgba(31, 124, 204, 0.59) 30.5%,
+        rgba(95, 172, 230, 0.9815) 64.5%,
+        rgba(163, 220, 47, 0.7) 100%
+      ),
+      url("/bg.svg");
+  }
+
+  .header-background2 {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 101, 192, 0.8) 0%,
+      rgba(31, 124, 204, 0.59) 30.5%,
+      rgba(95, 172, 230, 0.9815) 64.5%,
+      rgba(163, 220, 47, 0.7) 100%
+    );
+  }
+
+  ._header_component {
+    background-image: url(/src/assets/about-main-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 25rem;
+    width: 100%;
+  }
+
+  /* @media screen and (min-width: 1000px) {
+    ._header_component {
+      background-position:center;
+      background-size: 100% 25rem;
+    }
+  } */
+
+  /* @media screen and (max-width: 1000px) {
+    ._header_component {
+      background-position: 0px 190px;
+      background-repeat: no-repeat;
+      background-size: 100% 25rem;
+    }
+  } */
+
+  @media screen and (max-width: 800px) {
+    ._header_component {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 120% 20rem;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    ._header_component {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 150% 20rem;
+    }
+  }
+
+  ._about_section_5 {
+    position: relative;
+  }
+
+  ._about_section_5::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+    background-image: url("./assets/about/section5/Vector 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  ._about_section_5::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    background-image: url("./assets/about/section5/Vector 2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  ._abdm_section_1 {
+    position: relative;
+  }
+
+  ._abdm_section_1::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -7px;
+    width: 50px;
+    height: 50px;
+    scale: -1;
+    z-index: 10;
+    background-image: url("./assets/about/section5/Vector 2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  ._img_top::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -7px;
+    width: 50px;
+    height: 50px;
+    scale: -1;
+    z-index: 10;
+    background-image: url("./assets/about/section5/Vector 2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  ._img_bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    transform: rotateY(190deg);
+    background-image: url("./assets/about/section5/Vector 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  ._abdm_section_1::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    transform: rotateY(190deg);
+    background-image: url("./assets/about/section5/Vector 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  ._inner_blog_section_3 {
+    position: relative;
+    height: auto;
+  }
+
+  ._inner_blog_section_3::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 101, 192, 0.8) 0%,
+      rgba(31, 124, 204, 0.59) 30.5%,
+      rgba(95, 172, 230, 0.9815) 64.5%,
+      rgba(163, 220, 47, 0.7) 100%
+    );
+  }
+
+  /* ._after_effect_left::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+
+  } */
+
+  ._maximizing_efficiency {
+    background-image: url("./assets/maximizing-efficiency/section-3-bg-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 30rem;
+    min-height: 100vh;
+  }
+
+  ._clinic_management_card:hover{
+    @apply !bg-[#0065C0E5]
+  }
+
+  ._clinic_management_card:hover p {
+    @apply text-white
+  }
+
+  ._clinic_management_card:hover h2 {
+    @apply text-white
+  }
+
+  ._sm_menu_ {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 101, 192, 0.8) 0%,
+      rgba(31, 124, 204, 0.59) 30.5%,
+      rgba(95, 172, 230, 0.9815) 64.5%,
+      rgba(163, 220, 47, 0.7) 100%
+    );
+  }
+}
+.swiper {
+  @apply min-h-[50vh];
+}
+
+.swiper-pagination-bullet-active {
+  background: #a3dc2f !important;
+}
+
+a.active {
+  @apply text-[#A3DC2F];
+}
+
+/* Loading spinner */
+.spinner_V8m1{transform-origin:center;animation:spinner_zKoa 2s linear infinite}
+.spinner_V8m1 circle{stroke-linecap:round;animation:spinner_YpZS 1.5s ease-in-out infinite}
+@keyframes spinner_zKoa{100%{transform:rotate(360deg)}}
+@keyframes spinner_YpZS{0%{stroke-dasharray:0 150;stroke-dashoffset:0}47.5%{stroke-dasharray:42 150;stroke-dashoffset:-16}95%,100%{stroke-dasharray:42 150;stroke-dashoffset:-59}}
